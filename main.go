@@ -110,11 +110,11 @@ func flush(tasks *[]Task) {
 }
 
 func main() {
-	parser := argparse.NewParser("To-Do CLI App", "A CLI for a To-Do App")
+	parser := argparse.NewParser("To-Do CLI App", "A CLI tool for a To-Do App")
 
 	addMode := parser.NewCommand("add", "Add new task")
 	addModeTaskTitle := addMode.String("t", "title", &argparse.Options{Required: true, Help: "Title for new task"})
-	addModeTaskDetail := addMode.String("d", "details", &argparse.Options{Required: false, Help: "Details for new task", Default: ""})
+	addModeTaskDetail := addMode.String("d", "details", &argparse.Options{Required: false, Help: "Details for new task", Default: "None"})
 
 	removeMode := parser.NewCommand("remove", "Remove a task using its id")
 	removeModeTaskId := removeMode.Int("i", "id", &argparse.Options{Required: true, Help: "Id of Task to remove"})
