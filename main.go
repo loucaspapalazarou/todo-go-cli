@@ -152,8 +152,5 @@ func main() {
 	case flushMode.Happened():
 		flush(&tasks)
 		saveTasks(tasks)
-
-	default:
-		fmt.Println("No operation selected")
 	}
 }
