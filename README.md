@@ -1,4 +1,4 @@
-# To-do CLI Tool in Go
+# To-Do CLI Tool in Go
 
 This is a simple command line interface tool I made in Go in order to unserstand how CLI tools work. The data is stored in a local json file.
 
