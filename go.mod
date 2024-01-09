@@ -1,4 +1,4 @@
-module todo-go-cli
+module github.com/loucaspapalazarou/todo-go-cli
 
 go 1.21.5
 
