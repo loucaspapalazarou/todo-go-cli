@@ -41,4 +41,4 @@ go run main.go remove -i 2
 ID: 1, Title: shower, Detail: take a shower you smelly programmer
 ```
 
-Instead of using `go run` every time, we can compile the code using `go build main.go` and call the executable using `./main` in Linux and `main.exe` in windows.
+Instead of using `go run` every time, we can compile the code using `go build main.go` and call the executable using `./main`.
